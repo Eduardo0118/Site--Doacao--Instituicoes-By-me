@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salve os animais!</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Salve a vida de seus amiguinhos!</h1>
+        <h2>A sua doação fará diferença na vida dos animais</h2>
+        <img 
+        class="logo"
+        src="dog.jpg" 
+        alt="dog">
+        <p> Ajude nossa instituição a salvar mais animais</p>
+        <p> Acabe com o sofrimento de inocentes</p>
+        <p> Ajude com o que puder, independente da quantia seremos gratos.</p>
+        <input type="button" value="Ajude-nos">
+    </header>
+
+    <section class="form">
+
+        <h2>Entre na lista de doadores</h2>
+        <form action="/" method="POST">
+            <input id="string" type="string"
+                   name="name"
+                   placeholder="Nome completo"
+                   pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+            >
+
+            <input id="number" type="number"
+                   name="dinheiro"
+                   placeholder="Quantia a ser doada"
+                   min="1"
+            >
+
+            <input id="string" type="text"
+                   name="email"
+                   placeholder="Email"
+            >
+            <button>Ajude-nos</button>
+        </form>
+    </section>
+    
+    <main>
+        <h2>Últimos <span>Doadores</span></h2>
+
+        <section class="donors">
+            {% for donor in donors%}
+
+            <div class="donor">
+                <div class="tag">Doador(a)</div>
+                <div class=nome><strong>{{donor.name}}</strong></div>
+                <div class="dinheiro">R${{donor.dinheiro}}</div>  
+            </div>
+            {%endfor%}
+
+        </section>
+    </main>
+
+    <footer> <strong> Com amor instituição TESTE ❤ </strong> </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

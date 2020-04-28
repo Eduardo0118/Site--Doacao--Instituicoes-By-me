@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+html, body {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font: arial;
+    height: 100vh;
+    background-color: #ebe2e2;
+}
+
+footer {
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid rgb(163, 149, 149);
+}
+
+header, main, footer {
+    text-align: center;
+}
+
+header input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(181, 27, 253);
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #000000cc
+}
+
+header h1, header h2 {
+    margin-bottom: 70px;
+}
+
+header h1 {
+    margin: 10px;
+    padding: -100px;
+}
+
+header h2 {
+    margin: 25px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main .donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main h2 span {
+    color: rgb(181, 27, 253);
+}
+
+div.nome {
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+div.dinheiro {
+    margin-top: -15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+div.tag {
+    color: rgba(0, 0, 0, 0.973);
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.tag::before {
+    content: "";
+    background-color: rgba(181, 27, 253, 0.3);
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    top: -3px;
+    border-radius: 10px;
+}
+
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+    background-color: rgb(181, 27, 253);
+    padding: 16px 64px;
+    border-radius: 6px;
+    display: none;
+}
+
+.form h2 {
+    text-align: right;
+    color: #ffffffee;
+    font-size: 20px;
+
+}
+
+form input,
+form button {
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px #ffffff88 solid;
+}
+
+form button {
+    font-weight: bold;
+    background-color: white;
+}
+
+form input {
+    background-color: transparent;
+}
+
+.form {
+    text-align: right;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+}
+
+form input::placeholder {
+    color: #c0b4b4;
+}
+
+header, main, section.form {
+    margin: 0px auto 70px auto;
+    width: 90;
+    max-width: 500px; 
+}
+
+.logo {
+    width: 256px;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 28px;
+}
